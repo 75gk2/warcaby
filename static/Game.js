@@ -232,8 +232,6 @@ class Game {
             if (e.data.x === animation.start.x && e.data.y === animation.start.y)
                 return e
         })[0]
-        console.log(PION)
-        style.display = "none"
         const interval = setInterval(() => {
                 PION.position.z += (animation.end.x - animation.start.x) / 6
                 PION.position.x += (animation.end.y - animation.start.y) / 6
