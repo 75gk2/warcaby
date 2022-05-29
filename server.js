@@ -1,6 +1,7 @@
 const { json } = require('body-parser')
 const express = require('express')
 const app = express()
+let PORT = process.env.PORT || 3000;
 
 app.use(express.static('static'))
 app.use(express.json())
@@ -79,4 +80,4 @@ function startGame() {
     inGame = true
 }
 
-// app.listen(3000, console.log("klik->\thttp://127.0.0.1:3000"))
+app.listen(PORT, console.log("klik->\thttp://127.0.0.1:3000"))
