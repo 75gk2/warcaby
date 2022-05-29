@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="three.js"></script>
+    <script src="Main.js"></script>
+    <script src="Game.js"></script>
+    <script src="Net.js"></script>
+    <script src="Ui.js"></script>
+
+    <style>
+        #reset{
+            z-index: 1000;
+        }
+        #ui {
+            color: wheat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #loginForm {
+            width: 100px;
+            margin: auto;
+            top: 40vh;
+            padding: 30px 50px;
+            border: 1px solid green;
+            background-color: rgba(0, 150, 0, 0.5);
+        }
+
+        #loginForm button,
+        #loginForm input {
+            width: 100px;
+            padding: 10px;
+            border: 1px solid lime;
+            background-color: rgb(0,200,0);
+            border-radius: 10px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        #loginForm input {
+            width: 78px;
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+
+        #topBar {
+            width: 100vw;
+            padding: 20px 0;
+            position: absolute;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 255, 0, 0.3);
+            border-bottom: 1px solid rgb(0, 255, 0);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            color: white;
+        }
+
+        .clock {
+            display: flex;
+        }
+        .clock div{
+            padding:5px;
+        }
+
+    </style>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+<div id="root"></div>
+<div id="ui">
+    <div id="topBar">
+        <div class="clock">
+            <div>Pozostało:</div>
+            <div id="clock">
+                00
+            </div>
+            <div>sekund</div>
+        </div>
+        <div id="info2"></div>
+        <div id="info"></div>
+    </div>
+    <div id="loginForm">
+        <div>logowanie:</div>
+        <input id="name">
+        <button id=reset>reset</button>
+        <button id=login>loguj</button>
+    </div>
+</div>
+</body>
+
+</html>
