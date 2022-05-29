@@ -79,4 +79,4 @@ function startGame() {
     inGame = true
 }
 
-app.listen(3000, console.log("klik->\thttp://127.0.0.1:3000"))
+// app.listen(3000, console.log("klik->\thttp://127.0.0.1:3000"))
